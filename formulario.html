@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+    div{
+    	width: 500px;
+    	margin: 0 auto;
+    }
+    form{
+	height: 80vh;
+	padding: 4% 15%;
+	background-color: #D21134;
+	}
+	form p{
+		font-size: 3.5vh;
+		color:white;
+		font-family: 'Overlock', sans-serif;
+		margin: 1vh 0;
+	}
+	input{
+		height: 6vh;
+		clear: both;
+		border:none;
+	}
+	.botonForm {
+	    width: 100%;
+	    font-family: 'Roboto Slab', sans-serif;
+	    background-color:#3A63B1;
+	    color: white;
+	    font-size: 3vh;
+	}
+	.botonForm:hover{
+		background-color: silver;
+	}
+	.textoForm {
+		font-family: 'Overlock', sans-serif;
+		width: 96%;
+		margin-bottom: 2vh;
+		display: block;
+		float: right;
+		color:grey;
+		padding: 1vh;
+		font-size: 3vh;
+		border:none;
+		resize: none;
+	}
+
+
+    </style>
+</head>
+<body>
+	<div>
+		<form>
+			<p>Nombre</p>
+			<input type="text" name="nombre" value="Escribe tu nombre" class="textoForm">
+			<p>Mail</p>
+			<input type="email" name="mail" value="Escribe tu mail" class="textoForm">
+			<p>Mensaje</p>
+			<textarea class="textoForm" name="descripcion" cols="40" rows="5"></textarea>
+			<input type="submit" value="Enviar" class="botonForm" id="btnForm">
+		</form>
+	</div>
+	<script type="text/javascript" src="formulario.js"></script>
+</body>
+</html>
